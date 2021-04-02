@@ -36,6 +36,7 @@ public class FacebookLoginTest {
 	
 	@Test
 	public void loginToFacebookAndSetStatus() throws InterruptedException, AWTException {
+		
 		//Login to Facebook
 		fbLoginPO.loadURL(url);
 		System.out.println("Title is:"+ driver.getTitle());
