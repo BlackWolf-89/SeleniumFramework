@@ -25,9 +25,9 @@ public class FacebookLoginTest {
 	String url =  "https://www.facebook.com/";
 	String username = "Test";
 	String password = "Test";
-	 public static final String USERNAME = "BlackWolf89";
-	 public static final String ACCESS_KEY = "d6e226ef-2d16-4aa9-acf8-4c13abee8033";
-	 public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
+	public static final String USERNAME = "BlackWolf89";
+	public static final String ACCESS_KEY = "d6e226ef-2d16-4aa9-acf8-4c13abee8033";
+	public static final String URL = "http://" + USERNAME + ":" + ACCESS_KEY + "@ondemand.saucelabs.com:80/wd/hub";
 	
 	@BeforeTest
 	public void setChromeDriver() throws MalformedURLException {
@@ -37,13 +37,13 @@ public class FacebookLoginTest {
 //		
 //		System.setProperty("webdriver.chrome.driver",".\\src\\main\\resources\\chromedriver.exe");
 //		driver = new ChromeDriver(options);
-		DesiredCapabilities dc = new DesiredCapabilities().chrome();
-		dc.setCapability("platform", "Windows 10");
-		dc.setCapability("version", "98.0");
-		dc.setCapability("build", "build-1.2");
-		dc.setCapability("name", "Git Test");
+		DesiredCapabilities caps = DesiredCapabilities.chrome();
+		caps.setCapability("platform", "Windows 10");
+	    caps.setCapability("version", "latest");
+	    caps.setCapability("build", "build-1.2");
+	    caps.setCapability("name", "Git Test");
 		
-		driver = new RemoteWebDriver(new URL(URL) , dc);
+		driver = new RemoteWebDriver(new URL(URL) , caps);
 		
 		fbLoginPO = new FacebookLogInPage(driver);
 		fbHomePO = new FacebookHomePage(driver);
