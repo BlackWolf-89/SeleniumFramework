@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-02T17:35:31 IST" name="Default suite" finished-at="2021-04-02T17:35:45 IST" duration-ms="13735">
+  <suite name="Default suite" duration-ms="13079" started-at="2021-04-03T11:28:49 IST" finished-at="2021-04-03T11:29:02 IST">
     <groups>
     </groups>
-    <test started-at="2021-04-02T17:35:31 IST" name="Default test" finished-at="2021-04-02T17:35:45 IST" duration-ms="13735">
+    <test name="Default test" duration-ms="13079" started-at="2021-04-03T11:28:49 IST" finished-at="2021-04-03T11:29:02 IST">
       <class name="WalletHubTest.FacebookLoginTest">
-        <test-method is-config="true" signature="setChromeDriver()[pri:0, instance:WalletHubTest.FacebookLoginTest@76ed1b7c]" started-at="2021-04-02T17:35:31 IST" name="setChromeDriver" finished-at="2021-04-02T17:35:36 IST" duration-ms="5150" status="PASS">
+        <test-method status="PASS" signature="setChromeDriver()[pri:0, instance:WalletHubTest.FacebookLoginTest@32709393]" name="setChromeDriver" is-config="true" duration-ms="7469" started-at="2021-04-03T11:28:49 IST" finished-at="2021-04-03T11:28:56 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setChromeDriver -->
-        <test-method signature="loginToFacebookAndSetStatus()[pri:0, instance:WalletHubTest.FacebookLoginTest@76ed1b7c]" started-at="2021-04-02T17:35:36 IST" name="loginToFacebookAndSetStatus" finished-at="2021-04-02T17:35:44 IST" duration-ms="7398" status="PASS">
+        <test-method status="PASS" signature="loginToFacebookAndSetStatus()[pri:0, instance:WalletHubTest.FacebookLoginTest@32709393]" name="loginToFacebookAndSetStatus" duration-ms="5071" started-at="2021-04-03T11:28:56 IST" finished-at="2021-04-03T11:29:01 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToFacebookAndSetStatus -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:WalletHubTest.FacebookLoginTest@76ed1b7c]" started-at="2021-04-02T17:35:44 IST" name="tearDown" finished-at="2021-04-02T17:35:45 IST" duration-ms="1096" status="PASS">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:WalletHubTest.FacebookLoginTest@32709393]" name="tearDown" is-config="true" duration-ms="461" started-at="2021-04-03T11:29:02 IST" finished-at="2021-04-03T11:29:02 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

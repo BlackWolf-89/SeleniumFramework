@@ -1,10 +1,16 @@
 package WalletHubTest;
 
 import java.awt.AWTException;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
@@ -50,11 +56,16 @@ public class FacebookLoginTest {
 	}
 	
 	@Test
-	public void loginToFacebookAndSetStatus() throws InterruptedException, AWTException {
+	public void loginToFacebookAndSetStatus() throws InterruptedException, AWTException, IOException, Exception {
 		
 		//Login to Facebook
 		fbLoginPO.loadURL(url);
 		System.out.println("Title is:"+ driver.getTitle());
+		TakesScreenshot scrShot = ((TakesScreenshot) driver);
+		File srcFile = scrShot.getScreenshotAs(OutputType.FILE);
+		File destFile = new File(System.getProperty("user.dir")+"Result_"+System.currentTimeMillis()+".png");
+		FileUtils.copyFile(srcFile, destFile);
+		
 //		fbLoginPO.FacebookLogin(username, password);
 		Thread.sleep(2000);
 		
