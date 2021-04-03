@@ -66,6 +66,7 @@ public class FacebookLoginTest {
 		File destFile = new File(System.getProperty("user.dir")+"Result_"+System.currentTimeMillis()+".png");
 		FileUtils.copyFile(srcFile, destFile);
 		
+		
 //		fbLoginPO.FacebookLogin(username, password);
 		Thread.sleep(2000);
 		
